@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Білецька, ПП-26 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="result">
+<script>
+let text = prompt("Введіть текст для шифрування:");
+
+let alphabet = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя";
+let result = "";
+
+for (let ch of text.toLowerCase()) {
+    let index = alphabet.indexOf(ch);
+
+    if (index === -1) {
+        result += ch; // якщо символ не літера
+    } else {
+        result += alphabet[(index + 1) % alphabet.length];
+    }
+}
+
+document.write("Початковий текст: " + text + "<br><br>");
+document.write("Зашифровано: " + result);
+</script>
+</div>
+    <a href="index.html" class="back-btn">← Повернутись на головну</a>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Білецька, ПП-26 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="result">
+<script>
+let text = prompt("Введіть текст:");
+
+let formatted = "";
+let countA = 0;
+let countB = 0;
+
+for (let i = 0; i < text.length; i++) {
+    let ch = text[i];
+
+    if (ch === 'A' || ch === 'a') countA++;
+    if (ch === 'B' || ch === 'b') countB++;
+
+    if (ch === ',') formatted += ", ";
+    else formatted += ch;
+}
+
+document.write("Початковий текст: " + text + "<br>");
+document.write("Відформатовано: " + formatted + "<br><br>");
+document.write("Кількість A: " + countA + "<br>");
+document.write("Кількість B: " + countB);
+</script>
+</div>
+    <a href="index.html" class="back-btn">← Повернутись на головну</a>
+</html>

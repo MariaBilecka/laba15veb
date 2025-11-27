@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Білецька, ПП-26 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="result">
+<script>
+let sentence = prompt("Введіть речення:");
+
+let words = sentence.split(" ");
+
+let thirdLength = words[2].length;
+
+let temp = words[0];
+words[0] = words[words.length - 1];
+words[words.length - 1] = temp;
+
+document.write("Початкове речення: " + sentence + "<br><br>");
+document.write("Довжина третього слова: " + thirdLength + "<br><br>");
+document.write("Після перестановки: " + words.join(" "));
+</script>
+</div>
+    <a href="index.html" class="back-btn">← Повернутись на головну</a>
+</html>

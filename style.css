@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #cfd4da;
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    color: #444;
+}
+
+
+.task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list li {
+    background: #eef2f7;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.task-list li:hover {
+    background: #dce6f5;
+}
+
+.task-list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a4f8b;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.back-btn {
+    display: block;          /* робимо як блок */
+    width: fit-content;      /* ширина по тексту */
+    margin: 30px auto;       /* авто = по центру */
+    padding: 10px 18px;
+    background: #1a4f8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #163f70;
+}
+
+.result {
+    text-align: center;   /* центр тексту */
+    font-size: 20px;
+    line-height: 1.6;
+}
